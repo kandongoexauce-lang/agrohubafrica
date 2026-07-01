@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Agro-Hub Africa | Révolution Agricole</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-primary": "#ffffff",
+                "outline": "#6f797a",
+                "tertiary-container": "#306d52",
+                "on-primary-fixed-variant": "#004f56",
+                "inverse-surface": "#2e3131",
+                "on-error": "#ffffff",
+                "on-tertiary-container": "#adecca",
+                "primary-fixed-dim": "#82d3de",
+                "on-secondary-fixed": "#321200",
+                "surface-variant": "#e1e3e2",
+                "primary-container": "#006d77",
+                "on-secondary": "#ffffff",
+                "error-container": "#ffdad6",
+                "surface-tint": "#006972",
+                "on-error-container": "#93000a",
+                "on-primary-fixed": "#001f23",
+                "primary": "#00535b",
+                "surface-bright": "#f9f9f8",
+                "surface-container-high": "#e7e8e7",
+                "secondary-fixed": "#ffdbc9",
+                "surface": "#f9f9f8",
+                "error": "#ba1a1a",
+                "primary-fixed": "#9ff0fb",
+                "surface-container-lowest": "#ffffff",
+                "tertiary-fixed-dim": "#95d4b3",
+                "tertiary": "#14553b",
+                "on-secondary-fixed-variant": "#753400",
+                "on-surface": "#191c1c",
+                "surface-container": "#edeeed",
+                "secondary-container": "#fd8532",
+                "surface-container-highest": "#e1e3e2",
+                "tertiary-fixed": "#b1f0ce",
+                "inverse-on-surface": "#f0f1f0",
+                "secondary": "#9a4600",
+                "on-tertiary-fixed": "#002114",
+                "outline-variant": "#bec8ca",
+                "on-background": "#191c1c",
+                "on-primary-container": "#9becf7",
+                "on-tertiary-fixed-variant": "#0e5138",
+                "surface-container-low": "#f3f4f3",
+                "surface-dim": "#d9dad9",
+                "on-secondary-container": "#642b00",
+                "on-surface-variant": "#3e494a",
+                "inverse-primary": "#82d3de",
+                "on-tertiary": "#ffffff",
+                "background": "#f9f9f8"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "stack-md": "24px",
+                "base": "8px",
+                "margin-mobile": "16px",
+                "container-max": "1280px",
+                "margin-desktop": "40px",
+                "stack-sm": "12px",
+                "stack-lg": "48px",
+                "gutter": "24px"
+            },
+            "fontFamily": {
+                "body-md": ["Plus Jakarta Sans"],
+                "body-sm": ["Plus Jakarta Sans"],
+                "headline-xl": ["Hanken Grotesk"],
+                "body-lg": ["Plus Jakarta Sans"],
+                "headline-lg-mobile": ["Hanken Grotesk"],
+                "label-caps": ["JetBrains Mono"],
+                "headline-md": ["Hanken Grotesk"],
+                "headline-lg": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .bg-mesh {
+            background-color: #f9f9f8;
+            background-image: radial-gradient(at 0% 0%, rgba(0, 83, 91, 0.05) 0px, transparent 50%),
+                              radial-gradient(at 100% 100%, rgba(154, 70, 0, 0.05) 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 max-w-container-max mx-auto bg-surface dark:bg-inverse-surface shadow-sm">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">
+            Agro-Hub Africa
+        </div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-primary py-1" href="#">Marketplace</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="#">Fintech</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="#">EdTech</a>
+<a class="px-6 py-2 bg-primary text-on-primary rounded-full font-bold hover:bg-primary-container active:scale-95 transition-all" href="#">
+                Member Area
+            </a>
+</nav>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden bg-mesh">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="z-10 py-stack-lg space-y-stack-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-fixed text-on-secondary-fixed rounded-full text-label-caps font-label-caps uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Kinshasa, RDC
+                    </div>
+<h1 class="font-headline-xl text-headline-xl text-primary leading-[1.1]">
+                        L'Afrique au cœur de la <span class="text-secondary">révolution</span> agricole
+                    </h1>
+<p class="text-body-lg text-on-surface-variant max-w-lg">
+                        Nous débutons à Kinshasa pour l'Afrique. Une plateforme intégrée pour transformer le secteur agro-pastoral grâce à la technologie, la finance et le savoir.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="px-8 py-4 bg-primary text-on-primary rounded-xl font-bold flex items-center gap-2 hover:shadow-lg transition-all active:scale-95">
+                            Vendre mes produits
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="px-8 py-4 border-2 border-primary text-primary rounded-xl font-bold hover:bg-primary/5 transition-all">
+                            Acheter local
+                        </button>
+</div>
+</div>
+<div class="relative h-[400px] md:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A cinematic, high-resolution photograph of a modern African farmer in a lush green field near Kinshasa, holding a digital tablet that displays real-time agricultural data and crop health metrics. The lighting is golden hour, casting a warm, professional glow over the scene. In the background, traditional farming tools meet modern hydroponic structures under a vast, clear sky. The aesthetic is crisp, corporate, and inspiring, blending vibrant greens of the crops with the deep teal and ochre of the brand palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJYLk8UcO3Z7g9h6_u3eL2Lw5EWHAAS9xVhId_7sqVFFAQ9DcGj_tnPr0aLVdJSm_0c8iA-Ttouadn5LCTjFi7meQaqmqw34NzlRQInxWNSDwN6iahZyqKRweNA1edk6vAeUdUQIO_jOSFWUAukLB1A4fMXcLVLgNC_ynW6jv_53NWspuUp-15SBZVZBjmUgCZ9lmtwNLeXbFvClTbfrYqTDBwL1gbeRxLhP3ntnuhwSnzLk8vv6xUcZEi3DK27wGGFK49Qe-JaqrV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 p-4 bg-white/90 backdrop-blur-md rounded-2xl flex items-center gap-4">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<div>
+<div class="text-label-caps font-bold text-primary">IMPACT LOCAL</div>
+<div class="text-body-sm font-semibold">+240 agriculteurs connectés cette semaine</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pillars Section -->
+<section class="py-stack-lg bg-surface">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Nos trois piliers</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Une approche holistique pour soutenir chaque étape de la chaîne de valeur agricole, du champ à l'assiette.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Marketplace -->
+<div class="p-8 bg-white rounded-3xl border border-outline-variant hover:shadow-xl transition-shadow group">
+<div class="w-16 h-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-4xl">storefront</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3">Marketplace</h3>
+<p class="text-on-surface-variant mb-6">Connectez-vous directement aux consommateurs. Vendez vos récoltes au prix juste sans intermédiaires inutiles.</p>
+<a class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all" href="#">
+                            Explorer le marché <span class="material-symbols-outlined">chevron_right</span>
+</a>
+</div>
+<!-- Fintech -->
+<div class="p-8 bg-white rounded-3xl border border-outline-variant hover:shadow-xl transition-shadow group">
+<div class="w-16 h-16 bg-secondary/10 text-secondary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-4xl">account_balance_wallet</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3">Fintech</h3>
+<p class="text-on-surface-variant mb-6">Accédez à des micro-crédits adaptés au cycle des récoltes et sécurisez vos transactions avec Agro-Pay.</p>
+<a class="text-secondary font-bold flex items-center gap-2 hover:gap-4 transition-all" href="#">
+                            Voir les solutions <span class="material-symbols-outlined">chevron_right</span>
+</a>
+</div>
+<!-- EdTech -->
+<div class="p-8 bg-white rounded-3xl border border-outline-variant hover:shadow-xl transition-shadow group">
+<div class="w-16 h-16 bg-tertiary/10 text-tertiary rounded-2xl flex items-center justify-center mb-6 group-hover:bg-tertiary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-4xl">school</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3">EdTech</h3>
+<p class="text-on-surface-variant mb-6">Apprenez les meilleures techniques de culture moderne via nos modules de formation certifiants.</p>
+<a class="text-tertiary font-bold flex items-center gap-2 hover:gap-4 transition-all" href="#">
+                            Commencer à apprendre <span class="material-symbols-outlined">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Acheter Local Section -->
+<section class="py-stack-lg bg-surface-container-low overflow-hidden">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-10">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Acheter local</h2>
+<p class="text-on-surface-variant">Produits frais de Kinshasa et ses environs.</p>
+</div>
+<button class="text-primary font-bold hidden md:block">Tout voir</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<!-- Product 1 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-48 relative">
+<img class="w-full h-full object-cover" data-alt="Close up shot of organic yellow maize cobs, fresh and glistening with dew. The cobs are arranged artfully on a rustic wooden table. The lighting is bright and natural, reflecting a clean and healthy agricultural aesthetic typical of premium organic products in Africa. Vivid yellow kernels contrast with soft green husks." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgdyo0sNAJsvzU_xEWh6CN14rsGmTskblNySDNVVV8oIK2Lw7EKsUV9rRMcPGNLEl1Njivdr_ES2Z5por2EnemXbVRqeYjWEq2ID_Oqlu6z1cyqh8CBWD1JitKCoYtYSwiWJuiPe7FPP7-uh4Hwe-fU2_nArbcw33UZkUIq-YGbDooL6TyEfZ1JSdVC-X8zDBfDHxIegPOTVCxz2xgWlO7MPhTED8Uz24po_90FREDSC9KiKLgiuRpTxy6sK-g0_6Mnm42BITjNpGz"/>
+<span class="absolute top-2 left-2 bg-primary text-on-primary px-2 py-1 rounded text-[10px] font-bold uppercase">Nouveau</span>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-on-surface">Maïs Jaune Bio</h4>
+<p class="text-sm text-on-surface-variant">Ferme Malebo</p>
+<div class="mt-3 flex justify-between items-center">
+<span class="text-primary font-bold">2.500 FC <small class="text-xs text-on-surface-variant font-normal">/kg</small></span>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-48 relative">
+<img class="w-full h-full object-cover" data-alt="A crate full of vibrant red ripe tomatoes, freshly harvested. The tomatoes are plump and shiny, still featuring small green stems. The scene is set in a sun-drenched outdoor market stall, with soft bokeh background. Colors are intense and appetizing, emphasizing the freshness of local Congolese produce." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT3bGRgOu4bCG8e6n8vSlwDJKPxakm0ndIy8P2uNlozLQHk_mval-pl1r4-cy98WKQpEC79H-OEIX-fQSUB4vv3W9FsJ_HisVPf07qlk2s8sd5JDGevMMBbeWCHooAiMuapAY1VM7-rGf51rdMmirOy-MZJUk0GoSWitrn4g6_qrtDwv_it2-GAYIpAOnNkH6dOlyH3XdafYGgTLHDw_c2WSd7iJrOxYExEodTPhcwe1ygVvvs9LQi0QRzCMJmtY6TQG5-Zierre24"/>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-on-surface">Tomates Roma</h4>
+<p class="text-sm text-on-surface-variant">Agro-Pool Kimwenza</p>
+<div class="mt-3 flex justify-between items-center">
+<span class="text-primary font-bold">1.200 FC <small class="text-xs text-on-surface-variant font-normal">/kg</small></span>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-48 relative">
+<img class="w-full h-full object-cover" data-alt="Large, healthy cassava tubers with textured brown skin, resting on a bed of fresh green leaves. The lighting is studio-quality but feels grounded, with deep shadows and highlights that emphasize the tactile quality of the roots. This represents a staple Congolese food presented with modern, professional flair." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk1WwQi-PHZRbG4ijp3y_FBSi3aC3D_jw-e2EawGgrLCB-iMH89kCfAudmgMg4NRZ3_8yv_l2GBMClxNbSbW19acCxWgpY-1Iez4nt8nT7-NHfk7nx5tQVsUAo-FbHByUgRN5fsUIxqxYkgDnddD5JsWfXuUGPE88wqXPRYSI9uLJHrlECzsAd8Mcol8ophBcj3U_FM5r_kfTNTOnU3E9N3DnqgqGiYQ20j_7e6n2nGwDVxRcuTCnrNlBGJRvrMDJJyeOCbIJjXCuz"/>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-on-surface">Manioc Frais</h4>
+<p class="text-sm text-on-surface-variant">Coopérative N'sele</p>
+<div class="mt-3 flex justify-between items-center">
+<span class="text-primary font-bold">3.000 FC <small class="text-xs text-on-surface-variant font-normal">/sac</small></span>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-48 relative">
+<img class="w-full h-full object-cover" data-alt="A bottle of artisanal golden honey with a clean, minimalist label. Beside it is a wooden honey dipper. The background is a blurred image of wildflowers and a modern beehive. The lighting is golden and warm, suggesting a premium, high-quality agricultural product made with care and technology." src="https://lh3.googleusercontent.com/aida-public/AB6AXuApkTPK-KQL1eePC7DQSZ3ZE9sXNReAH1RcBeQvxySDdTchBm9jL6ENpRunN9cTGFZ3edydGpwU5Xv8v0JW-d6SKZCJoeLRFue3qV3N4zGa5FF1Ed5UaBGP_5QSbIayJ8BsWivobejK4MIOqJ5TnsLaOXytJK7BUmf1B4gzNo2f29IgIDX1yQHta4Iidca2SplbzSo0Wq0ES4QcyPS6IR-amKITpcGiV3KHbyzKW5BYc87r1y8nfR-vpgy0mN0emyBPl0VEb1AiOoKb"/>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-on-surface">Miel de Bateke</h4>
+<p class="text-sm text-on-surface-variant">Apiculture Moderne</p>
+<div class="mt-3 flex justify-between items-center">
+<span class="text-primary font-bold">15.000 FC <small class="text-xs text-on-surface-variant font-normal">/500ml</small></span>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- EdTech / Training Section -->
+<section class="py-stack-lg bg-white">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1 relative">
+<div class="aspect-square bg-tertiary-fixed rounded-[40px] transform -rotate-3 absolute inset-0 -z-10"></div>
+<div class="rounded-[40px] overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover aspect-square" data-alt="A group of young African students and farmers gathered around a 3D hydroponic system model in a modern, sunlit classroom. They are engaged in learning, with digital screens showing plant growth cycles in the background. The mood is educational, hopeful, and technologically advanced, using a palette of greens, teal, and light wood tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3bBSZ4DAiK5H-t461vd3idxMOw0-Mhwq_jgqLRsMXyUISBTI6Lzku4XFbIwi6n6ef1Gsggb7GQeRSaH_Ye9gWNfoPIL8spDea_5PSwomvFIED2ezYsSBpwFRGb2nVBXQ8cqZcfgJNe03ljjBjDWiFtxGUcxuIGwFLs7Hi-n4a2UQYdR2-mlRMeG0cc92JPsnFp2yL3nwPHT2NbEsY4v57MSEQDHS1lTtClHqXUbOVNpSklqRiNbO6uHWqgCzmQZZPty4VvLmVqqqI"/>
+</div>
+<div class="absolute -bottom-10 -right-10 hidden md:block w-48 h-48 bg-white p-4 rounded-3xl shadow-xl border border-outline-variant">
+<div class="text-center">
+<div class="text-3xl font-bold text-tertiary">98%</div>
+<div class="text-xs text-on-surface-variant mt-2">Taux de réussite des certifiés</div>
+<div class="mt-4 flex -space-x-2 justify-center">
+<div class="w-8 h-8 rounded-full border-2 border-white bg-slate-200"></div>
+<div class="w-8 h-8 rounded-full border-2 border-white bg-slate-300"></div></div></div></div></div></div></div></section></main></body></html>
